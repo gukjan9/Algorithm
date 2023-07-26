@@ -10,6 +10,7 @@ def alphabetOrder(n):
 
     for i in range(len(arr)):
         print(str(arr[i]), end=" ")
+    # print(' '.join([str(num) for num in result]))
 
 alphabetOrder(S)
 
