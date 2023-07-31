@@ -1,35 +1,26 @@
 class Solution:
     def isValid(self, s):
+        list_s = list(s)
         stack = []
-        for i in range(len(s)):
-            stack.append(s[i])
 
-        while (stack):
-            if (stack[-1] == "]"):
-                stack.pop()
-                if (stack[-1] == "["):
+        for s in list_s:
+            if(s == '{' or s == '[' or s == '('):
+                stack.append(s)
+            elif len(stack) != 0:
+                if((s == '}' and stack[-1] == '{') or
+                        (s == ']' and stack[-1] == '[') or
+                        (s == ')' and stack[-1] == '(')):
                     stack.pop()
                 else:
                     return False
-
-            elif (stack[-1] == "}"):
-                stack.pop()
-                if (stack[-1] == "{"):
-                    stack.pop()
-                else:
-                    return False
-
-            elif (stack[-1] == ")"):
-                stack.pop()
-                if (stack[-1] == "("):
-                    stack.pop()
-                else:
-                    return False
-
             else:
                 return False
+
+        # 괄호 하나 일 때
+        if len(stack) != 0:
+            return False
 
         return True
 
 s = Solution()
-print(s.isValid("[][][]"))
+print(s.isValid("]"))
