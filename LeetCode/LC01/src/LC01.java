@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class LC01 {
     public static void main(String[] args) {
-        int count = 0;
-        int[] num;
+        int count = 0;      // 입력 받을 숫자 수
+        int[] num;          // 입력 받은 정수가 저장되는 배열
         int target = 0;
         int result1 = 0;
         int result2 = 0;
