@@ -1,46 +1,50 @@
-import java.util.HashMap;
-import java.util.Set;
+import java.util.ArrayList;
 
 public class Solution {
     public static int romanToInt(String s) {
         String[] arr = s.split("");
         int result = 0;
 
-        HashMap<Integer, String> map = new HashMap<Integer, String>();
-        map.put(1, "I");
-        map.put(5, "V");
-        map.put(10, "X");
-        map.put(50, "L");
-        map.put(100, "C");
-        map.put(500, "D");
-        map.put(1000, "M");
+        ArrayList<String> stringList = new ArrayList<>();
+        ArrayList<Integer> integerList = new ArrayList<>();
 
-        Set<Integer> keySet = map.keySet();
+        stringList.add(0, "I");
+        stringList.add(1, "V");
+        stringList.add(2, "X");
+        stringList.add(3, "L");
+        stringList.add(4, "C");
+        stringList.add(5, "D");
+        stringList.add(6, "M");
 
-        for(int i=0; i<arr.length; i++){
-            if((arr[i].equals(map.get(1)) || arr[i].equals(map.get(10)) || arr[i].equals(map.get(100)) || arr[i].equals(map.get(1000)))
-            && (arr[i+1].equals(map.get(5)) || arr[i+1].equals(map.get(50)) || arr[i+1].equals(map.get(500))) {
-                result = result + map.get((int)getKey(map, arr[i+1])) - map.get((int)getKey(map, arr[i]));
-            }
-            else {
+        integerList.add(0, 1);
+        integerList.add(1, 5);
+        integerList.add(2, 10);
+        integerList.add(3, 50);
+        integerList.add(4, 100);
+        integerList.add(5, 500);
+        integerList.add(6, 1000);
 
-            }
-
+        if(arr.length == 1){
+            return integerList.get(stringList.indexOf(arr[0]));
         }
 
-        return 0;
-    }
-
-    public static Object getKey(HashMap<Integer, String> m, Object value) {
-        for(Object o: m.keySet()) {
-            if(m.get(o).equals(value)) {
-                return o;
+        for(int i=0; i<arr.length-1; i++){
+            if((arr[i].equals(stringList.get(0)) || arr[i].equals(stringList.get(2)) || arr[i].equals(stringList.get(4)) || arr[i].equals(stringList.get(6)))
+                && (stringList.indexOf(arr[i]) < stringList.indexOf(arr[i + 1]))) {
+                    result += integerList.get(stringList.indexOf(arr[i + 1])) - integerList.get(stringList.indexOf(arr[i]));
+                    i++;
+            }
+            else{
+                result += integerList.get(stringList.indexOf(arr[i]));
+            }
+            if (i == arr.length - 2) {
+                result += integerList.get(stringList.indexOf(arr[i+1]));
             }
         }
-        return null;
+        return result;
     }
 
     public static void main(String[] args) {
-        romanToInt("hello");
+        System.out.println(romanToInt("D"));
     }
 }
