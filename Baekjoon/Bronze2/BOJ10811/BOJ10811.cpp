@@ -27,7 +27,6 @@ int main(){
 int order(int i, int j, int N, int arr[]){
     int temp;
 
-    // 홀수 1-4
     if((j - i) <= 0){
         return arr[N];
     }
@@ -40,3 +39,9 @@ int order(int i, int j, int N, int arr[]){
         return order(++i, --j, N, arr);
     }
 }
+
+// reverse 사용 -> 재귀함수 없앨 수 있음
+// std::reverse(a+x, a+y+1);
+// a+x 인 이유 -> 배열의 이름은 배열의 0번째 인덱스의 주소이기 때문
+
+// 맞힌 사람들을 보면 재귀를 쓴 사람은 보이질 않는다..
