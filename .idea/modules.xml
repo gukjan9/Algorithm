@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Algorithm.iml" filepath="$PROJECT_DIR$/.idea/Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Baekjoon/Bronze5/BOJ1000/BOJ1000.iml" filepath="$PROJECT_DIR$/Baekjoon/Bronze5/BOJ1000/BOJ1000.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Baekjoon/Bronze5/BOJ1001/BOJ1001.iml" filepath="$PROJECT_DIR$/Baekjoon/Bronze5/BOJ1001/BOJ1001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Baekjoon/Bronze5/BOJ1008/BOJ1008.iml" filepath="$PROJECT_DIR$/Baekjoon/Bronze5/BOJ1008/BOJ1008.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Baekjoon/Bronze5/BOJ10869/BOJ10869.iml" filepath="$PROJECT_DIR$/Baekjoon/Bronze5/BOJ10869/BOJ10869.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Baekjoon/Bronze5/BOJ10926/BOJ10926.iml" filepath="$PROJECT_DIR$/Baekjoon/Bronze5/BOJ10926/BOJ10926.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Baekjoon/Bronze5/BOJ10998/BOJ10998.iml" filepath="$PROJECT_DIR$/Baekjoon/Bronze5/BOJ10998/BOJ10998.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Baekjoon/Bronze5/BOJ2557/BOJ2557.iml" filepath="$PROJECT_DIR$/Baekjoon/Bronze5/BOJ2557/BOJ2557.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCode/LC01/LC01.iml" filepath="$PROJECT_DIR$/LeetCode/LC01/LC01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCode/LC09/LC09.iml" filepath="$PROJECT_DIR$/LeetCode/LC09/LC09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCode/LC13/LC13.iml" filepath="$PROJECT_DIR$/LeetCode/LC13/LC13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCode/LC14/LC14.iml" filepath="$PROJECT_DIR$/LeetCode/LC14/LC14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programmars/P12928/P12928.iml" filepath="$PROJECT_DIR$/Programmars/P12928/P12928.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programmars/P12930/P12930.iml" filepath="$PROJECT_DIR$/Programmars/P12930/P12930.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programmars/P12931/P12931.iml" filepath="$PROJECT_DIR$/Programmars/P12931/P12931.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programmars/P12937/P12937.iml" filepath="$PROJECT_DIR$/Programmars/P12937/P12937.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programmars/P12944/P12944.iml" filepath="$PROJECT_DIR$/Programmars/P12944/P12944.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programmars/P12954/P12954.iml" filepath="$PROJECT_DIR$/Programmars/P12954/P12954.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programmars/P147355/P147355.iml" filepath="$PROJECT_DIR$/Programmars/P147355/P147355.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programmars/P87389/P87389.iml" filepath="$PROJECT_DIR$/Programmars/P87389/P87389.iml" />
+    </modules>
+  </component>
+</project>
